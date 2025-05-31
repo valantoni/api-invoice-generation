@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        h1 { text-align: center; }
+        .detalle { margin-top: 20px; }
+        .detalle p { margin: 5px 0; }
+        .total { margin-top: 20px; font-size: 1.2em; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Factura {{ factura.numero_factura }}</h1>
+    <p><strong>Cliente:</strong> {{ factura.cliente }}</p>
+    <p><strong>Dirección:</strong> {{ factura.direccion }}</p>
+    <p><strong>Fecha:</strong> {{ factura.fecha }}</p>
+
+    <div class="detalle">
+        <h2>Detalle</h2>
+        <p><strong>Concepto:</strong> {{ factura.concepto }}</p>
+        <p><strong>Importe:</strong> {{ factura.importe }} €</p>
+    </div>
+
+    <p class="total">Total: {{ factura.importe }} €</p>
+</body>
+</html>
