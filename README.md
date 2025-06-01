@@ -43,7 +43,7 @@ This project is a FastAPI-based application designed to generate invoices in PDF
 1. Start the FastAPI server:
 
     ```bash
-    uvicorn main:app --reload
+    uvicorn app.main:app --reload
     ```
 
 2. Access the API documentation at `http://127.0.0.1:8000/docs`.
